@@ -1,0 +1,23 @@
+.js-anim
+	transform: translate(0, 40px)
+	opacity: 0
+	transition: transform .8s, opacity .8s
+	@media (max-width: 479px)
+		transition: transform .5s, opacity .5s
+	&--opacity
+		transform: translate(0,0)
+	&--left
+		transform: translate(-40px, 0)
+	&--right
+		transform: translate(40px, 0)
+	&--top
+		transform: translate(0, -40px)
+	&--d-02
+		transition-delay: .2s
+	&--d-04
+		transition-delay: .4s
+	&--d-07
+		transition-delay: 1s
+	&._show
+		transform: translate(0, 0)
+		opacity: 1

@@ -1,0 +1,25 @@
+.footer
+    background-color: $cBg
+    position: relative
+    z-index: 3
+    opacity: 0
+    transform: translateY(50px)
+    transition: all .7s
+    padding: 1rem 0
+    &__row
+        display: flex
+        height: 100%
+
+    &__column
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        font-weight: 300
+
+    &__creator
+        a
+            color: $cExtra
+            &:hover
+                text-decoration: underline
+    &__copyringt
+        color: $cExtra

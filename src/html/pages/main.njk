@@ -1,0 +1,82 @@
+{% extends "layouts/_default.njk" %}
+{% block content %}
+    <section class="intro js-scene">
+        <div class="decor-page js-decor">
+            <img src="content/icon-cookie.svg" alt="">
+        </div>
+        <div class="decor-page js-decor">
+            <img src="content/icon-cookie.svg" alt="">
+        </div>
+        <div class="decor-page js-decor">
+            <img src="content/icon-cookie.svg" alt="">
+        </div>
+        <div class="decor-page js-decor">
+            <img src="content/icon-cookie.svg" alt="">
+        </div>
+        <div class="decor-page js-decor">
+            <img src="content/icon-cookie.svg" alt="">
+        </div>
+        <div class="decor-page js-decor">
+            <img src="content/icon-cookie.svg" alt="">
+        </div>
+        <div class="decor-page js-decor">
+            <img src="content/icon-cookie.svg" alt="">
+        </div>
+        <div class="decor-page js-decor">
+            <img src="content/icon-cookie.svg" alt="">
+        </div>
+        <div class="container">
+            <form action="/" method="#" class="form js-anim js-anim--d-07">
+                <h1 class="form__title">Register</h1>
+                <div class="form__content">
+                    <div class="form__body">
+                        <div class="item-form">
+                            <div class="item-form__title">Username</div>
+                            <label class="input-form">
+                                <input class="input-form__item" type="text" data-required="text" placeholder="Enter text here">
+                                <span class="input-form__message input-form__message--error">Необходимое поле для заполнения</span>
+                                <span class="input-form__message input-form__message--correct">Успех</span>
+                            </label>
+                        </div>
+                        <div class="item-form">
+                            <div class="item-form__title">E-mail</div>
+                            <label class="input-form">
+                                <input class="input-form__item" type="text" data-required="text" placeholder="Enter e-mail here">
+                                <span class="input-form__message input-form__message--error">Необходимое поле для заполнения</span>
+                                <span class="input-form__message input-form__message--correct">Успех</span>
+                            </label>
+                        </div>
+                        <div class="item-form">
+                            <div class="item-form__title">Password</div>
+                            <label class="input-form">
+                                <input class="input-form__item" type="password" data-required="text" placeholder="Enter password here">
+                                <span class="input-form__message input-form__message--error">Необходимое поле для заполнения</span>
+                                <span class="input-form__message input-form__message--correct">Успех</span>
+                            </label>
+                        </div>
+                        <div class="item-form">
+                            <div class="item-form__title">Confirmation</div>
+                            <label class="input-form">
+                                <input class="input-form__item" type="password" placeholder="Enter confirmation here">
+                                <span class="input-form__message input-form__message--error">Необходимое поле для заполнения</span>
+                                <span class="input-form__message input-form__message--correct">Успех</span>
+                            </label>
+                        </div>
+                        <div class="item-form">
+                            <label class="input-form input-form--checkbox">
+                                <input class="input-form__item" type="checkbox" data-required="checkbox">
+                                <span class="input-form__text">I agree to the <a href="#">terms of the service</a></span>
+                                <span class="input-form__body">
+                                    <img src="content/icon-cookie.svg" alt="">
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__btns">
+                        <button type="submit" class="form__btn btn">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+{% endblock %}
