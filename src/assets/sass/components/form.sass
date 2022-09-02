@@ -1,58 +1,3 @@
-// .form
-//     &__item
-//         margin: 0 0 4rem 0
-//         &:last-child
-//             margin: 0
-//     &__btn
-//         display: inline-flex
-//         justify-content: center
-//         align-items: center
-//         height: 5rem
-//         max-width: 20rem
-//         width: 100%
-//         background-color: $colorBlack
-//         color: $colorWhite
-//         &._inactive-submit
-//             pointer-events: none
-//             background-color: gray
-// .input-form
-//     position: relative
-//     display: block
-
-//     input
-//         display: block
-//         width: 100%
-//         height: 100%
-//         position: relative
-//         z-index: 1
-//         border: solid .1rem $colorBlack
-//         height: 4rem
-//         padding: 0 1rem
-//         transition: border-color .3s
-//         &._error
-//             border-color: red
-//             ~.input-form__message--error
-//                 opacity: 1
-//                 pointer-events: all
-//                 transform: translateY(0)
-//         &._correct
-//             border-color: green
-//             ~.input-form__message--correct
-//                 opacity: 1
-//                 pointer-events: all
-//                 transform: translateY(0)
-//     &__message
-//         position: absolute
-//         z-index: 0
-//         top: calc( 100% + .5rem )
-//         right: 0
-//         color: red
-//         opacity: 0
-//         transform: translateY(-1rem)
-//         pointer-events: none
-//         transition: all .3s
-
-
 .form
     max-width: 76.8rem
     width: 100%
@@ -76,14 +21,12 @@
 
     &__body
 
-
     &__btns
         display: flex
         justify-content: center
         margin: 1.5rem 0 0 0
         @media (min-width: 768px)
             margin: 2.8rem 0 0 0
-
 
 .item-form
     margin: 0 0 1.5rem 0
@@ -98,7 +41,6 @@
         padding: 0 0 0 .8rem
         margin: 0 0 .5rem 0
         line-height: 1.2
-
 
 .input-form
     background-color: #AF9164
@@ -136,12 +78,9 @@
     &__message
         display: none
 
-
     &__message--error
 
-
     &__message--correct
-
 
     &__text
         @media (max-width: 767px)
@@ -149,7 +88,6 @@
         a
             &:hover
                 text-decoration: underline
-
 
     &__body
         width: 3.2rem
@@ -165,5 +103,3 @@
             opacity: 0
             transform: scale(0)
             transition: opacity $trTime, transform $trTime
-
-

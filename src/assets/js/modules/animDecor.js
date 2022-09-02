@@ -23,9 +23,9 @@ class AnimDecor {
   constructor() {
     this.scene = document.querySelector('.js-scene');
     this.decor = document.querySelectorAll('.js-decor');
-    this.pointOne = null;
-    this.pointTwo = null;
-    this.pointThree = null;
+    this.x = null;
+    this.y = null;
+    this.rotate = null;
 
     if (this.scene) {
       this.init();
@@ -34,27 +34,27 @@ class AnimDecor {
 
   set() {
     this.decor.forEach((el) => {
-      this.pointOne = Math.floor(Math.random() * this.scene.clientWidth - 50);
-      this.pointTwo = Math.floor(Math.random() * this.scene.clientHeight - 50);
-      this.pointThree = Math.floor(Math.random() * 720 - 360);
+      this.x = Math.floor(Math.random() * this.scene.clientWidth);
+      this.y = Math.floor(Math.random() * this.scene.clientHeight);
+      this.rotate = Math.floor(Math.random() * 720 - 360);
 
-      if (this.pointOne >= this.scene.clientWidth) {
-        this.pointOne = this.scene.clientWidth - 50;
+      if (this.x >= this.scene.clientWidth) {
+        this.x = this.scene.clientWidth;
       }
-      if (this.pointTwo >= this.scene.clientHeight) {
-        this.pointTwo = this.scene.clientHeight - 50;
+      if (this.y >= this.scene.clientHeight) {
+        this.y = this.scene.clientHeight;
       }
-      if (this.pointThree >= 360) {
-        this.pointThree = 360;
+      if (this.rotate >= 360) {
+        this.rotate = 360;
       }
 
-      el.style.transform = `translate(${this.pointOne}px, ${this.pointTwo}px) rotate(${this.pointThree}deg)`;
+      el.style.transform = `translate(${this.x}px, ${this.y}px) rotate(${this.rotate}deg)`;
     });
   }
 
   interval() {
     const THIS = this;
-    setInterval(THIS.set.bind(THIS), 5000);
+    setInterval(THIS.set.bind(THIS), 7000);
   }
 
   init() {
